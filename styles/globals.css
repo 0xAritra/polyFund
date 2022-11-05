@@ -6,6 +6,10 @@
   font-family: "Inria Sans", sans-serif;
 }
 
+body {
+  color: white;
+}
+
 .header {
   height: 50px;
   width: 100%;
@@ -85,8 +89,23 @@
   margin-bottom: 20px;
 }
 
+.rfunds3{
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 75%;
+  height: fit-content;
+}
+
 .heading-two {
   margin-left: 350px;
+}
+
+.img{
+  transition: transform .7s;
+}
+
+.img:hover{
+  transform: scale(1.2);
 }
 
 .bttn {
@@ -112,4 +131,61 @@ a {
   color: white;
   text-decoration: none;
   background-color: rgb(31, 13, 13);
+}
+
+.raise,
+.donate {
+  font-size: 1.5rem;
+}
+.raise label {
+  display: block;
+  text-align: left;
+  margin: 1rem 8rem;
+}
+
+.donate .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem;
+  color: aqua;
+}
+.raise .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem;
+  color: aqua;
+}
+
+.raise .form {
+  text-align: center;
+}
+
+.raise input {
+  padding: 0.8rem 4rem;
+  outline: none;
+  border: 1px black solid;
+  width: 75%;
+  margin: 1rem 1rem;
+  background-color: #4a4a4a;
+  color: black;
+  font-weight: 700;
+  border-radius: 2rem;
+  box-shadow: 4px 4px 8px 8px hsl(249, 10%, 26%);
+}
+
+.submit-btn {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid pink;
+  cursor: pointer;
+  border-radius: 2rem;
+  box-shadow: 0 8px 8px 0 rgba(239, 208, 208, 0.2);
+  background-color: rgb(38, 41, 40);
+  color: white;
+}
+
+.submit-btn:hover{
+  background-color: rgb(40, 7, 7);
 }
