@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap");
 
-*{
+* {
   margin: 0;
-  background-color: #2f2e41; 
-  font-family: 'Inria Sans', sans-serif;
+  background-color: #2f2e41;
+  font-family: "Inria Sans", sans-serif;
 }
 
-.header{
+.header {
   height: 50px;
   width: 100%;
   background-color: rgb(31, 13, 13);
@@ -16,7 +16,7 @@
   color: white;
 }
 
-.head{
+.head {
   background-color: rgb(31, 13, 13);
   justify-content: space-between;
   display: flex;
@@ -24,14 +24,14 @@
   flex: 0.8;
 }
 
-.button{
+.button {
   justify-content: right;
   width: fit-content;
   height: fit-content;
   background-color: rgb(31, 13, 13);
 }
 
-.btn{
+.btn {
   background-color: rgb(31, 13, 13);
   border: 1px solid white;
   height: 50px;
@@ -55,15 +55,14 @@
   justify-content: space-between;
 }
 
-
-.rhead{
+.rhead {
   font-size: 50px;
   margin-bottom: 20px;
   width: 55%;
   color: aqua;
 }
 
-.rfunds{
+.rfunds {
   width: 55%;
   height: fit-content;
   padding-top: 20px;
@@ -71,14 +70,14 @@
   margin-bottom: 20px;
 }
 
-.rhead2{
+.rhead2 {
   font-size: 50px;
   margin-bottom: 20px;
   width: 55%;
   color: aqua;
 }
 
-.rfunds2{
+.rfunds2 {
   width: 500px;
   height: fit-content;
   padding-top: 20px;
@@ -86,9 +85,8 @@
   margin-bottom: 20px;
 }
 
-.heading-two{
+.heading-two {
   margin-left: 350px;
-
 }
 
 .bttn {
@@ -109,4 +107,9 @@
 
 .bttn:hover{
   background-color: rgb(195, 93, 93);
+}
+a {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(31, 13, 13);
 }
