@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
+
 const Landing = () => {
   return (
     <div className='landing'>
@@ -14,7 +15,7 @@ const Landing = () => {
                Excepteur sint occaecat cupidatat non proident, 
                sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            
+            <button className='bttn'>RAISE FUNDS</button>
         </div>
         <div>
             <Image width={400} height={400} src='/undraw_transfer_money_re_6o1h.svg' />
@@ -37,14 +38,28 @@ const Landing = () => {
                Excepteur sint occaecat cupidatat non proident, 
                sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <button className='bttn'>RAISE FUNDS</button>
         </div>
      </div>
-
+    
+     <div className='landingOne'>
+        <div className='land-head'>
+            <h1 className='rhead'>TOKEN</h1>
+            <p className='rfunds'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+               Excepteur sint occaecat cupidatat non proident, 
+               sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div>
+            
+        </div>
+     </div>
     
 
     </div>
-
-
   )
 }
 
