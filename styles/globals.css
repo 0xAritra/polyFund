@@ -90,3 +90,17 @@ a {
   text-decoration: none;
   background-color: rgb(31, 13, 13);
 }
+.master{
+  color: white;
+  text-decoration: none;
+
+}
+.heading{
+  margin-left: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.card{
+  backdrop-filter: blur(10px);
+}
