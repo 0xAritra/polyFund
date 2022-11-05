@@ -1,6 +1,6 @@
 export default {
-  name: 'author',
-  title: 'Author',
+  name: 'raise_funds',
+  title: 'Raise Funds',
   type: 'document',
   fields: [
     {
@@ -9,40 +9,29 @@ export default {
       type: 'string',
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 96,
-      },
+      name: 'location',
+      title: 'Location',
+      type: 'string',
     },
     {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      name: 'email',
+      title: 'Email',
+      type: 'string',
     },
     {
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
+      name: 'donation_amount',
+      title: 'Donation Amount',
+      type: 'string',
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'string',
     },
   ],
   preview: {
     select: {
       title: 'name',
-      media: 'image',
     },
   },
 }
