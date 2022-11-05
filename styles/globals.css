@@ -60,6 +60,7 @@
   font-size: 50px;
   margin-bottom: 20px;
   width: 55%;
+  color: aqua;
 }
 
 .rfunds{
@@ -67,12 +68,14 @@
   height: fit-content;
   padding-top: 20px;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .rhead2{
   font-size: 50px;
   margin-bottom: 20px;
   width: 55%;
+  color: aqua;
 }
 
 .rfunds2{
@@ -80,6 +83,7 @@
   height: fit-content;
   padding-top: 20px;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .heading-two{
@@ -87,3 +91,22 @@
 
 }
 
+.bttn {
+  background-color: rgb(215, 49, 49);
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(239, 208, 208, 0.2);
+  border-radius: 8px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.bttn:hover{
+  background-color: rgb(195, 93, 93);
+}
