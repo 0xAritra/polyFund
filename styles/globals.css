@@ -132,7 +132,10 @@ a {
   text-decoration: none;
   background-color: rgb(31, 13, 13);
 }
-
+.master{
+  color: white;
+  text-decoration: none;
+}
 .raise,
 .donate {
   font-size: 1.5rem;
@@ -188,4 +191,14 @@ a {
 
 .submit-btn:hover{
   background-color: rgb(40, 7, 7);
+}
+
+.heading{
+  margin-left: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.card{
+  backdrop-filter: blur(10px);
 }
