@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Shop = ({ object, properties, size , imgUrl}) => {
+const Shop = ({ object, properties, size , imgUrl, price}) => {
   return (
     <div className='card'>
       <div className='card-head'>
@@ -10,7 +10,10 @@ const Shop = ({ object, properties, size , imgUrl}) => {
       </div>
        <div className='descrip'>
        {properties}
-       <button className='bttn3'>Buy Now</button>
+       <div className='buy'>
+         <strong>Price:</strong> {price} $PLT
+        <button className='bttn3'>Buy Now</button>
+       </div>
        </div>
     
      </div>
