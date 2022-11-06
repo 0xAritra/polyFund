@@ -242,9 +242,9 @@ a {
 
 .min-amt{
   margin: 30px 0px 30px 0px;
-  width: 300px;
-  text-align: right;
-  padding: 20px 30px 20px 20px;
+  width: 400px;
+  text-align: center;
+  padding: 20px;
   color: pink;
   border-radius: 8px;
   border: 1px solid red

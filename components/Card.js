@@ -18,7 +18,7 @@ const Card = ({ name, description, email, amount, wallet_address }) => {
       <div className="descrip">
         {description}
         <div className="min-amt">
-          Minimum Amount: <strong className="am">{amount}</strong> MATIC
+          Minimum Amount: <strong className="am">{amount} MATIC</strong>
         </div>
       </div>
     </div>
