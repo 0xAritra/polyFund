@@ -13,7 +13,11 @@ const Landing = () => {
             Included among them are identifying key local providers of health services; 
             working to identify the unmet needs of people in the low-resource areas; mobilizing essential medicines, supplies, and equipment that are requested and appropriate for the circumstances; and managing the many details inherent in storing, transporting, and distributing such resources to organizations in the most efficient manner possible.
             </p>
-            <button className='bttn'>RAISE FUNDS</button>
+            <Link href="/raise">
+            <button className='bttn'>
+            RAISE FUNDS
+            </button>
+            </Link>
         </div>
         <div>
             <Image className='img' width={400} height={400} src='/undraw_transfer_money_re_6o1h.svg' />
@@ -33,9 +37,11 @@ const Landing = () => {
             This was created to take action to support those already facing the harshest effects of poverty, climate change and ongoing conflict. 
             The pandemic has put them in an even more fragile position, and they shouldn’t have to face this alone.In 191 countries around the world, experienced teams of Red Cross staff and volunteers work alongside communities, listen to what they need, and give them the tools to be able to rebuild their future.
             </p>
+            <Link href="/donate">
             <button className='bttn'>
-            <Link href="donate">Donate funds</Link>
+            DONATE FUNDS
             </button>
+            </Link>
         </div>
      </div>
     

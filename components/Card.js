@@ -5,6 +5,13 @@ const Card = ({ name, description, email, amount }) => {
     <div className="card">
       <div className="card-head">
         <h2 className="card-h">{name}</h2>
+        <div>
+        <input 
+          className="input-card"
+          type='number'
+          placeholder="Enter the amount"
+        />
+        </div>
         <button className="bttn3">DONATE</button>
       </div>
       <div className="descrip">
