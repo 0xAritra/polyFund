@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import Link from "next/link"
 
 const Landing = () => {
   return (
@@ -8,12 +8,10 @@ const Landing = () => {
      <div className='landingOne'>
         <div className='land-head'>
             <h1 className='rhead'>RAISE FUNDS</h1>
-            <p className='rfunds'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-               Excepteur sint occaecat cupidatat non proident, 
-               sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p className='rfunds'>Nongovernmental, nonsectarian, and not-for-profit,
+            Direct Relief relies entirely on private contributions to advance its mission and perform a wide range of functions.
+            Included among them are identifying key local providers of health services; 
+            working to identify the unmet needs of people in the low-resource areas; mobilizing essential medicines, supplies, and equipment that are requested and appropriate for the circumstances; and managing the many details inherent in storing, transporting, and distributing such resources to organizations in the most efficient manner possible.
             </p>
             <button className='bttn'>RAISE FUNDS</button>
         </div>
@@ -31,14 +29,13 @@ const Landing = () => {
         </div>
         <div className='heading-two'>
         <h1 className='rhead2'>DONATE</h1>
-            <p className='rfunds2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-               Excepteur sint occaecat cupidatat non proident, 
-               sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p className='rfunds2'>
+            This was created to take action to support those already facing the harshest effects of poverty, climate change and ongoing conflict. 
+            The pandemic has put them in an even more fragile position, and they shouldn’t have to face this alone.In 191 countries around the world, experienced teams of Red Cross staff and volunteers work alongside communities, listen to what they need, and give them the tools to be able to rebuild their future.
             </p>
-            <button className='bttn'>RAISE FUNDS</button>
+            <button className='bttn'>
+            <Link href="donate">Donate funds</Link>
+            </button>
         </div>
      </div>
     

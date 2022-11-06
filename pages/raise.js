@@ -1,4 +1,11 @@
-const raise = () => {
+import { useState } from "react"
+
+const Raise = () => {
+  const [name, setName] = useState([])
+  const [email, setEmail ] = useState([])
+  const [description, setDescription] = useState([])
+  const [donation, setDonation] = useState([])
+
   return (
     <div className="raise">
       <div className="title">
@@ -11,17 +18,17 @@ const raise = () => {
       </div>
       <div className="form">
         <label htmlFor="name">Name: </label>
-        <input name="name" type="text" placeholder="" /> <br />
+        <input value={name} onChange={(e) => setName(e.target.value)} name="name" type="text" placeholder="Enter the Name of Fund" /> <br />
         <label htmlFor="email">Email ID: </label>
-        <input name="email" type="text" /> <br />
+        <input value={email} onChange={(e) => setEmail(e.target.value)} name="email" type="text" placeholder="Enter the Email Id" /> <br />
         <label htmlFor="description">Description: </label>
-        <input name="description" type="text" /> <br />
+        <input value={description} onChange={(e) => setDescription(e.target.value)} name="description" type="text" placeholder="Enter the cause" /> <br />
         <label htmlFor="donation">Donation: </label>
-        <input name="donation" type="text" /> <br />
+        <input value={donation} onChange={(e) => setDonation(e.target.value)} name="donation" type="text" placeholder="Minimum amount of donation" /> <br />
         <button className="submit-btn">Submit</button>
       </div>
     </div>
   )
 }
 
-export default raise
+export default Raise;
