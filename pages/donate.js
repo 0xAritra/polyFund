@@ -1,5 +1,4 @@
 import Card from "../components/Card"
-
 import { useEffect, useState } from "react"
 import client from "../sanity"
 
@@ -9,17 +8,15 @@ const donate = () => {
   
 
 useEffect(() => {
-  const fetchData = async () => {
 
-    const groq = `*[_type == "raise_funds"]{
-      _createdAt,name,description,donation_amount,email
-    }]`
-    const links = await client.fetch(groq);
-    console.log(links)
-  }
+    const fetchData = async () => {
+      const url = "https://v4f5v3wm.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22raise_funds%22%5D%0A"
 
-  fetchData();
-  
+      const data = await fetch(url);
+
+      console.log(data)
+    }
+    fetchData()
     
 }, [])
 
@@ -29,10 +26,7 @@ useEffect(() => {
       <div className="title">
         <h1>DONATE FUNDS</h1>
         <p className="don-fun">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Harum
-          odit sunt totam accusamus cum. Suscipit, blanditiis magni. <br />
-          Esse, delectus ducimus ratione quia eum iure mollitia est nam enim
-          tenetur labore.
+        fundraise and donate seamlessly! Set up and manage your fundraiser or donate to different causes from your mobile at anytime and from anywhere
         </p>
       </div>
       <Card

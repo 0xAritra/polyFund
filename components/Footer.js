@@ -1,14 +1,11 @@
 import Link from "next/link"
-
 const Footer = () => {
   return <>
     <div className="footer">
       <div className="header">
-        <div className="head">
-          <Link href="/">Polyfund</Link>
-        </div>
+          <p className="rights">© 2022 PolyFund. All rights reserved.</p>
       </div>
-  </div></>
+    </div></>
 
 }
-    export default Footer
+export default Footer

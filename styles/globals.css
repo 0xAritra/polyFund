@@ -145,6 +145,8 @@ a {
 
 .don-fun{
    width: 780px;
+   color: white;
+   margin-left: 22px;
 }
 
 .raise label {
@@ -259,3 +261,20 @@ a {
   cursor: pointer;
   justify-content: center;
 }
+/* .footer{
+  height: 5px;
+  width: 100%;
+  background-color: rgb(31, 13, 13);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  color: white;
+} */
+p.rights{
+   text-align: center;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
