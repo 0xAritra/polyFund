@@ -59,8 +59,9 @@ const Header = () => {
   return (
     <div className="navbar">
       <div className="header">
+      <img className="imgpoly" src="/Poly-Fund Logo.svg"/>
         <h1 className="head">
-          Polyfund
+        <Link href="/">POLYGON</Link>
         </h1>
         <div className="button">
           <button className="btn">
