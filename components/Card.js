@@ -1,20 +1,20 @@
-import React from 'react'
-
+import React from "react";
 
 const Card = ({ name, description, email, amount }) => {
   return (
-    <div className='card'>
-      <div className='card-head'>
-       <h2 className='card-h'>{name}</h2>
-       <button className='bttn3'>DONATE</button>
+    <div className="card">
+      <div className="card-head">
+        <h2 className="card-h">{name}</h2>
+        <button className="bttn3">DONATE</button>
       </div>
-       <div className='descrip'>
-       {description}
-       <div className='min-amt'>Minimum Amount: <strong className='am'>{amount}</strong></div>
-       </div>
-    
-     </div>
-  )
-}
+      <div className="descrip">
+        {description}
+        <div className="min-amt">
+          Minimum Amount: <strong className="am">{amount}</strong> MATIC
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Card
+export default Card;
