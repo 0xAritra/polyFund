@@ -6,14 +6,17 @@ const donate = () => {
   
 
 useEffect(() => {
-  if (client) {
+  const fetchData = async () => {
 
+    const groq = `*[_type == "raise_funds"]{
+      _createdAt,name,description,donation_amount,email
+    }]`
+    const links = await client.fetch(groq);
+    console.log(links)
+  }
 
+  fetchData();
   
-  const groq = `*[_type == "raise_funds"]{
-    _createdAt,name,description,donation_amount,email
-  }]`
-  client.fetch(groq).then((data) => {console.log(data);setRaiseFunds(data)})}
     
 }, [])
 

@@ -1,5 +1,14 @@
-const Footer = () => {
-  return <div></div>
-}
+import Link from "next/link"
 
-export default Footer
+const Footer = () => {
+  return <>
+    <div className="footer">
+      <div className="header">
+        <div className="head">
+          <Link href="/">Polyfund</Link>
+        </div>
+      </div>
+  </div></>
+
+}
+    export default Footer
