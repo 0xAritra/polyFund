@@ -9,5 +9,3 @@ const client = sanityClient({
   useCdn: true, 
 })
 
-
-export default sanityClient;
