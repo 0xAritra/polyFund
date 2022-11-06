@@ -42,8 +42,9 @@ useEffect(() => {
         amount= '10'
       />
       <Card
-        name='UKRAINE WAR CRISIS'
-        description='Communities across Nigeria are experiencing the worst floods in at least 10 years. More than 600 people have been killed and 2.8 million people have been displaced from their homes. The floods are striking during a difficult period in Nigeria with soaring inflation and a growing risk of catastrophic levels of hunger. Your donation to the Nigeria Flood Relief Fund will provide immediate and long-term relief in affected communities.'
+        name='SAVE THE CHILDREN FUND'
+        description='6 months on and there is still no safe place for children in Ukraine. Every war is a war against children. Right now 7.5 million children in Ukraine are in grave danger of physical harm, severe emotional distress, and displacement. The impact on civilians is reaching terrifying proportions. Air strikes and explosions have damaged essential services like schools, hospitals.
+        We are gravely concerned for children caught in the middle of this armed conflict. A child from Ukraine has become a refugee almost every single second of the war.'
         amount= '10'
       />
       {/* {raiseFunds?.map((fund, index) => {

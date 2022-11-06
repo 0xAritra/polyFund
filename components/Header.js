@@ -60,7 +60,7 @@ const Header = () => {
     <div className="navbar">
       <div className="header">
         <h1 className="head">
-          <Link href="/">Polyfund</Link>
+          Polyfund
         </h1>
         <div className="button">
           <button className="btn">
