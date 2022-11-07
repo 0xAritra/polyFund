@@ -38,11 +38,11 @@ const Header = () => {
 
   const connectWallet = async () => {
     try {
-      await getProviderOrSigner();
-      setWalletConnected(true);
-    } catch (error) {
-      console.error(error);
-    }
+      await getProviderOrSigner().then(() => setWalletConnected(true)).catch((err)=>setWalletConnected(false))
+      } catch (error) {
+        setWalletConnected(false)
+        console.log(error)
+      }
   };
 
   useEffect(() => {
