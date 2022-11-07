@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Card = ({ name, description, email, amount, wallet_address }) => {
-  console.log(wallet_address);
+const Card = ({ name, description, email, amount, wallet_address, clickHandler }) => {
+  const [amt, setAmt] = useState(0)
   return (
     <div className="card">
       <div className="card-head">
@@ -11,17 +11,18 @@ const Card = ({ name, description, email, amount, wallet_address }) => {
             className="input-card"
             type="number"
             placeholder="Enter the amount"
+            onChange={(e) => setAmt(e.target.value)}
           />
         </div>
-        <button className="bttn3">DONATE</button>
+        <button onClick={() =>  clickHandler(wallet_address, amt) } className="bttn3">DONATE</button>
       </div>
       <div className="descrip">
         {description}
         <div className="min-amt">
-          Minimum Amount: <strong className="am">{amount}</strong> MATIC
+          Raising: <strong className="am">{amount}</strong> MATIC
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
 

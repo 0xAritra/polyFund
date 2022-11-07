@@ -30,9 +30,9 @@ const Header = () => {
 
   const renderButton = () => {
     if (walletConnected) {
-      return <div></div>;
+      return <button className="btn">Connected!</button>;
     } else {
-      return <button onClick={connectWallet}>Connect Wallet</button>;
+      return <button className="btn" onClick={connectWallet}>Connect Wallet</button>;
     }
   };
 
@@ -61,7 +61,7 @@ const Header = () => {
       <div className="header">
       <img className="imgpoly" src="/Poly-Fund Logo.svg"/>
         <h1 className="head">
-        <Link href="/">POLYGON</Link>
+        <Link href="/">PolyFund</Link>
         </h1>
         <div className="button">
           <button className="btn">
@@ -73,10 +73,10 @@ const Header = () => {
           <button className="btn">
             <Link href="redeem">Redeem tokens</Link>
           </button>
-          <button className="btn">Connect Wallet</button>
+          {/* <button className="btn">Connect Wallet</button> */}
+      {renderButton()}
         </div>
       </div>
-      {renderButton()}
     </div>
   );
 };
